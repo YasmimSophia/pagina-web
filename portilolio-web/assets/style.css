@@ -1,5 +1,12 @@
+:root {
+    --text-color:rgb(114, 140, 117);
+    --card-front-color:rgb(44, 124, 74);
+    --card-back-color:rgb(40, 98, 85);
+}
+
+
 body{
-    background-color: #8b5757;
+    background-color: url("img/bg-download.jpg");
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -9,20 +16,22 @@ display: flex;
 
 .cartao{
     margin: 1.2rem 1.2rem;
-    background-color: bisque;
+
     height: 20.2rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6.2rem);
 }
 
 .cartao_conteudo{
+    background-color: var(--card-front-color);
     text-align: center;
-    background-color: blue;
+    background-color: rgb(186, 175, 144);
     height: 100%;
 }
 
 .cartao_conteudo h3{
-    background-color: #7b1919;
+   color: var(--text-color);
+   border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
